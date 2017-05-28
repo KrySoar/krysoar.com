@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link rel="icon" href="img/icon/krysoar.png">
+    <title>KrySoar</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:light" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        var logged = false;
+        var sign_in = document.getElementById('sign_in');
+
+        function log_in() {
+            var user = document.getElementById('user').value;
+            var password = document.getElementById('pass').value;
+            if(user === "admin" && password === "pass")
+            {
+                alert("welcome admin");
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <nav>
+        <ul id="navbar-menu">
+            <span id="navbar-title">KrySoar</span>
+            <li>
+                <a href="./index.html">Home</a>
+            </li>
+            <li>
+                <a href="./sandbox.html">Sandbox</a>
+            </li>
+            <li>
+                <a href="#">Projects</a>
+                <ul class="submenu">
+                    <li>
+                        <a href="projects/01/index.html" target="_blank">CSS Animation</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">Notification</a>
+                    </li>
+                    <li>
+                        <a href="projects/videoplayer/index.html" target="_blank">Video Player</a>
+                    </li>
+                    <li>
+                        <a href="projects/Javascript Canvas/index.html" target="_blank">Javascript Canvas</a>
+                    </li>
+                    <li>
+                        <a href="projects/Javascript SVG/index.html" target="_blank">Javascript SVG</a>
+                    </li>
+                    <li>
+                        <a href="projects/Code Editor/index.html" target="_blank">Code Editor</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="./contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <a id="go_top" href="#navbar-menu">^</a>
+
+    <div id="container">
+
+        <div id="left">
+            <div class="panel" >
+                <div class="panel-header" >
+                    <h1>Login</h1>
+                </div>
+                <div id="login" class="panel-content">
+                    <form method="POST" onsubmit="log_in()">
+                        <input type="text" id="user" placeholder="Username...">
+                        <input type="password" id="pass" placeholder="Password...">
+                        <br>
+                        <a style="font-size:13px;" href="#">Forgot your password ?</a>
+                        <br>
+                        <button id="sign_in" type="submit">Sign in</button>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="center">
+
+            <div class="panel">
+                <div class="panel-header">
+                    <h1>Web Development</h1>
+
+                </div>
+                <div class="panel-content">
+
+                    <p>The quick brown fox jumps over the lazy dog.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+
+            <div class="panel">
+                <div class="panel-header">
+                    <h1>Skillz</h1>
+                </div>
+                <div class="panel-content">
+                    <img class="icon" src="img/icon/cpp.png" alt="C++">
+                    <img class="icon" src="img/icon/html.png" alt="html5">
+                    <img class="icon" src="img/icon/css.png" alt="css3">
+                    <img class="icon" src="img/icon/javascript.png" alt="javascript5">
+                </div>
+            </div>
+
+            <div class="panel">
+                <div class="panel-header">
+                    <h1>Front End Development</h1>
+                </div>
+                <div class="panel-content" style="display: flex;flex-direction: row;">
+                    <div class="skill">
+                        <img class="icon" src="img/icon/html.png" alt="html5">
+                        <div class="progress-bar"><div class="bar" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <img class="icon" src="img/icon/css.png" alt="css3">
+                        <div class="progress-bar"><div class="bar" style="width: 60%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <img class="icon" src="img/icon/javascript.png" alt="javascript5">
+                        <div class="progress-bar"><div class="bar" style="width: 33%;"></div></div>
+                    </div>
+                    <p style="text-align:left;margin-left:5px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+            </div>
+
+            <div class="panel">
+                <div class="panel-header">
+                    <h1>Back End Development</h1>
+                </div>
+                <div class="panel-content">
+                    <p>Not Yet</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="right">
+            <div class="panel">
+                <div class="panel-header">
+                    <h1>Chat</h1>
+                </div>
+                <div class="panel-content">
+                    <div id="chat" style="text-align:left;">
+                        <p><b>KrySoar</b> : salut</p>
+                        <p><b>Sawayy</b> : yo</p>
+                        <p><b>KrySoar</b> : ça va ?</p>
+                        <p><b>Sawayy</b> : ouai ta fini le forum ?</p>
+                        <p><b>KrySoar</b> : ouai presque il reste juste les databases sql a faire</p>
+                        <p><b>Sawayy</b> : ok</p>
+                    </div>
+                    <form>
+                        <input type="text" placeholder="Enter a message..." name="message" >
+                        <button type="submit" >send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="footer">
+        <p style="color:white;font-weight:bold;">KrySoar-2017</p>
+        <a href="https://github.com/KrySoar" target="_blank"><img src="img/icon/github.png"></a>
+        <a href="https://twitter.com/Kry_Soar" target="_blank"><img src="img/icon/twitter.png"></a>
+        <a href="https://www.youtube.com/c/KrySoar" target="_blank"><img src="img/icon/youtube.png"></a>
+    </div>
+</body>
+</html>
