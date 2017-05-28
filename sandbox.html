@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sandbox</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:light" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+    #container{
+        display: flex;
+        justify-content: space-around;
+        align-items: stretch;
+        height: 45vmax;
+
+    }
+    #sandbox{
+        background-color: white;
+        flex: 1;
+        flex-grow: 3;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    #sandbox-settings{
+        background-color: white;
+        flex: 1;
+    }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul id="navbar-menu">
+            <span id="navbar-title">KrySoar</span>
+            <li>
+                <a href="./index.html">Home</a>
+            </li>
+            <li>
+                <a href="./sandbox.html">Sandbox</a>
+            </li>
+            <li>
+                <a href="#">Projects</a>
+                <ul class="submenu">
+                    <li>
+                        <a href="projects/01/index.html" target="_blank">CSS Animation</a>
+                    </li>
+                    <li>
+                        <a href="projects/videoplayer/index.html" target="_blank">Video Player</a>
+                    </li>
+                    <li>
+                        <a href="projects/Javascript Canvas/index.html" target="_blank">Javascript Canvas</a>
+                    </li>
+                    <li>
+                        <a href="projects/Javascript SVG/index.html" target="_blank">Javascript SVG</a>
+                    </li>
+                    <li>
+                        <a href="projects/01/index.html" target="_blank">Code Editor</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="./contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="container">
+        <div id="sandbox">
+            <div id="rectangle" style="position: relative;background-color:black;height:100px;width:100px;"></div>
+        </div>
+        <div id="sandbox-settings">
+            <h1>Sandbox Settings</h1>
+            <input id="posX" type="range" min="0" max="500" step="1" value="15">
+            <input id="posY" type="range" min="0" max="500" step="1" value="15">
+            <input id="sizeX" type="range" min="10" max="500" step="1" value="15">
+            <input id="sizeY" type="range" min="10" max="500" step="1" value="15">
+            <input id="play" type="button" value="Play">
+
+            <script src="sandbox.js"></script>
+        </div>
+    </div>
+
+
+    <div id="footer">
+        <p style="color:white;font-weight:bold;">KrySoar-2017</p>
+        <a href="https://github.com/KrySoar" target="_blank">GitHub</a>
+        <a href="https://twitter.com/Kry_Soar" target="_blank">Twitter</a>
+        <a href="https://www.youtube.com/c/KrySoar" target="_blank">YouTube</a>
+    </div>
+</body>
+</html>

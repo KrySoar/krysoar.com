@@ -1,0 +1,163 @@
+#carre {
+	width:35px;
+	height:35px;
+	border-radius:10%;
+	background: white;
+	box-shadow:0 0 20px #000 inset;
+	position:absolute;
+	top:35px;
+}
+
+
+body {
+	background: url('http://pre12.deviantart.net/a8b4/th/pre/i/2013/320/6/9/wood_planks_background_nr_2_by_rvmproductions-d6uican.jpg');
+	background-size: 100%;
+}
+#menu {
+	background:rgba(15,15,15,0.6);
+	float:left;
+	height:720px;
+	width:100px;
+	position: absolute;
+	top:0px;
+	left:-100px;
+	overflow: inherit;
+	transition:all 1s;
+}
+#develop {
+	height:1.2em;
+	width: .8em;
+	background:rgba(15,15,15,0.6);
+	font-size:1.5em;
+	font-weight:bold;
+	color:white;
+	margin-top:10px;
+	margin-left:100px;
+	padding: 5px;
+	text-align: center;
+	border-radius: 0 10px 10px 0;
+	overflow:hidden;
+	position: absolute;
+	
+
+}
+#menu:hover {
+	transition:all 1s;
+	left:0px;
+}
+#menu:hover #arrow {
+	transition:all .6s;
+	left: -25px;
+
+}
+#arrow {
+	transition:all 1s;
+	position:relative;
+	display:block;
+	left:3px;
+	}
+.select {
+	transition:all .5s;
+	color:white;
+	background: rgba(0,0,0,0);
+	font-size:1.5em;
+	position: relative;
+	margin-top:.2em;
+	width: 100px;
+	height:1.6em;
+	
+}
+.select:hover {
+	transition:all .6s;
+	background:rgba(0,0,0,0.4);
+	border-radius: 10px;
+}
+#titre {
+	width: 21em;
+	height:5.5em;
+	box-shadow: 0 0 10px rgba(0,0,0,0.9)inset;
+	border-radius: 5px;
+	color:rgba(255,255,255,0.7);
+	animation: titre 1s ease-in;
+	animation-iteration-count:infinite;
+	animation-direction: alternate;
+}
+@keyframes titre {
+	0% {
+		text-shadow: 0 0 5px white;
+	}
+	25% {
+		text-shadow: 0 0 10px white;
+	}
+	50% {
+		text-shadow: 0 0 15px white;
+	}
+	75% {
+		text-shadow: 0 0 20px white;
+	}
+	100% {
+		text-shadow: 0 0 25px white;
+	}
+}
+#loader {
+	position: absolute;
+	display: inline-block;
+	margin:0 auto;
+	vertical-align: middle;
+	height:2cm;
+	width: 2cm;
+	border-top: 5px solid white;
+	border-left:5px solid rgba(255,255,255,0.3);
+	border-right:5px solid rgba(255,255,255,0.3);
+	border-bottom:5px solid rgba(255,255,255,0.3);
+	border-radius: 2cm;
+
+	top:200px;
+	box-shadow: 0 0 1cm rgba(0,0,0,0.9)inset;
+	animation: loader 1s linear;
+	animation-iteration-count:infinite;
+	animation-direction:normal;
+	
+}
+
+@keyframes loader{
+	0% {
+		transform:rotate(360deg);
+		box-shadow: 0 0 2cm rgba(0,0,0,0.9);
+		border-radius: .5cm;
+	}
+	5% {
+		box-shadow: 0 0 1.5cm rgba(0,0,0,0.9); 
+	}
+	15% {
+		box-shadow: 0 0 1cm rgba(0,0,0,0.9);
+	}
+	25% {
+		box-shadow: 0 0 .5cm rgba(0,0,0,0.9);
+		border-radius: 1cm;
+		 
+	}
+	
+	55% {
+		box-shadow: none;
+		border-radius: 2cm; 
+	}
+	75% {
+		box-shadow: 0 0 .5cm rgba(0,0,0,0.9);
+		border-radius: 1cm;
+			
+	}
+	85% {
+		box-shadow: 0 0 1.5cm rgba(0,0,0,0.9);
+				 
+	}
+	95% {
+		box-shadow: 0 0 1.7cm rgba(0,0,0,0.9);
+				 
+	}
+	100% {
+		transform: rotate(0deg);
+		box-shadow: 0 0 2cm rgba(0,0,0,0.9);
+				border-radius: .5cm;
+	}
+}

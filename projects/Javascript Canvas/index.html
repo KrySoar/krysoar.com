@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Charles apprend a programmataer son site de l'internet</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+    var submit = document.getElementById('submit');
+    function login() {
+        var user = document.getElementById('user').value;
+        var pass = document.getElementById('pass').value;
+        if(user === "admin" && pass === "pass")
+        {
+            confirm("ation");
+            window.location.href = "https://www.google.com";
+        }
+    }
+    </script>
+</head>
+<body>
+    <nav>
+        <ul id="navbar">
+            <p id="navbar-title">KrySoar</p>
+            <li>
+                <a href="#">home</a>
+            </li>
+            <li>
+                <a href="#">oke</a>
+                <ul class="submenu">
+                    <li>
+                        <a href="#">1</a>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                </uL>
+            </li>
+            <li>
+                <a href="#">contact</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <div id="container">
+        <div id="left">
+            <div class="panel">
+                <div class="panel-header">
+                    <h1>Titre</h1>
+                </div>
+
+                <div class="panel-content">
+                    <form method="POST" onsubmit="login()">
+                        <input type="text" id="user" placeholder="Username"><br>
+                        <input type="password" id="pass" placeholder="Password">
+                        <input id="submit" type="submit" value="login">
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <div id="center">
+            <div class="panel">
+                <div class="panel-header">
+                    <h1>Titre</h1>
+                </div>
+
+                <div class="panel-content">
+                    <form method="POST" onsubmit="login()">
+                        <input type="text" id="user" placeholder="Username"><br>
+                        <input type="password" id="pass" placeholder="Password">
+                        <input id="submit" type="submit" value="login">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="right">
+            <div class="panel">
+                <div class="panel-header">
+                    <h1>Titre</h1>
+                </div>
+
+                <div class="panel-content">
+                    <form method="POST" onsubmit="login()">
+                        <input type="text" id="user" placeholder="Username"><br>
+                        <input type="password" id="pass" placeholder="Password">
+                        <input id="submit" type="submit" value="login">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+.tooltip {
+    background: linear-gradient(lightgrey,black);
+    border-radius: 15px;
+    color:white;
+    height:  100px;
+    max-width: 300px;
+    min-width: 100px;
+    padding:10px;
+    box-sizing: border-box;
+}
+
+.tooltip::after {
+    position: relative;
+    content: "";
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid black;
+    top: 100px;
+
+}
